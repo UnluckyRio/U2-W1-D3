@@ -1,0 +1,210 @@
+* {
+  font-family: "sans-serif", Arial, Helvetica;
+}
+
+/* Header */
+
+header {
+  background-color: #fef7e2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar button {
+  background-color: #ffdf7f;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #ffdf7f;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.navbar img {
+  width: 100px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #752305;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #752305;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+}
+
+/* Main */
+
+main {
+  background-color: white;
+}
+
+h2 {
+  text-align: left;
+  font-size: 5em;
+  font-weight: bold;
+  color: #752305;
+  margin-top: 1em;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+  padding-top: 20px;
+}
+
+/* Card prodotto miele */
+.product-card {
+  width: 350px; /* Larghezza card */
+  background: #fef7e2; /* Colore sfondo */
+  border-radius: 60px; /* Angoli arrotondati */
+  overflow: hidden; /* Nasconde overflow */
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08); /* Ombra */
+  margin: 40px auto; /* Centra la card */
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif; /* Font simile */
+}
+
+/* Immagine miele */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.product-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover; /* Ritaglia l'immagine */
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  display: block;
+}
+
+/* Dettagli prodotto */
+.product-details {
+  padding: 28px 24px 32px 24px;
+  background: #fef7e2;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+/* Info prodotto e prezzo */
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.product-info strong {
+  font-size: 1.5em;
+  color: #752305;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.product-desc {
+  color: #752305;
+  font-size: 1.1em;
+  opacity: 0.8;
+}
+
+/* Prezzo */
+.product-price {
+  font-size: 1.5em;
+  color: #752305;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Bottone aggiungi al carrello */
+.add-to-cart {
+  width: 100%;
+  background: #ffdf7f;
+  color: #752305;
+  border: none;
+  border-radius: 30px;
+  padding: 18px 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #ffdf7f;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.add-to-cart a {
+  text-decoration: none;
+  color: #752305;
+}
+
+.add-to-cart:hover {
+  background: #ffe8a3;
+}
+
+/* Article */
+
+.article {
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+article {
+  background-color: #fef7e2;
+  border-radius: 60px;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.article h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #752305;
+  margin-bottom: 1em;
+}
+
+.article p {
+  font-size: 1.5em;
+  color: #752305;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.article img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-left: 2em;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
