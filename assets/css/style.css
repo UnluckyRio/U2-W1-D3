@@ -165,8 +165,9 @@ h2 {
 /* Article */
 
 .article {
-  margin-top: 2em;
   margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
 }
 
 article {
@@ -207,4 +208,71 @@ article {
   border-radius: 50px;
   margin-left: 2em;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Media query per tablet e mobile: navbar laterale a sinistra */
+@media (max-width: 1024px) {
+  /* Navbar laterale */
+  .navbar {
+    position: fixed; /* Fissa a sinistra */
+    top: 0;
+    left: 0;
+    width: 220px; /* Larghezza navbar */
+    height: 100vh; /* Altezza tutta la finestra */
+    flex-direction: column; /* Elementi in colonna */
+    justify-content: flex-start;
+    align-items: center;
+    background: #fef7e2;
+    z-index: 1000;
+    padding: 30px 0 0 0;
+    gap: 20px;
+    box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.05);
+  }
+  /* Riduci dimensione logo */
+  .navbar img {
+    width: 70px;
+  }
+  /* Riduci dimensione bottoni */
+  .navbar button,
+  .navbar a {
+    width: 170px;
+    font-size: 1.1em;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+    justify-content: center;
+  }
+  /* Sposta il main a destra della navbar */
+  main {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  article {
+    flex-direction: column-reverse; /* Immagine sotto il testo */
+    align-items: center;
+    text-align: center;
+  }
+  .article img {
+    width: 90%; /* Immagine più grande e centrata */
+    height: auto;
+    margin: 1em 0 0 0;
+  }
+}
+
+/* Media query per mobile: navbar più stretta */
+@media (max-width: 600px) {
+  .navbar {
+    width: 100vw;
+    height: auto;
+    position: static;
+    flex-direction: column;
+    box-shadow: none;
+    padding: 10px 0;
+  }
+  main {
+    margin-left: 0;
+    padding: 10px;
+  }
+  .product-card {
+    width: 95%;
+  }
 }
